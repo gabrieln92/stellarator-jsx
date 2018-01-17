@@ -1,15 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Button from './components/Button';
+import Text from './components/Text';
 
 function handleButtonClick() {
-	alert('button clicked');
+  alert('button clicked');
 }
 
 class App extends Component {
-	render() {
-		return (
-			<div>
-				{/*
+  render() {
+    return (
+      <div>
+        {/*
 					Component:
 						Button
 
@@ -18,10 +19,9 @@ class App extends Component {
 						loading (possible values: true / false)
 						onButtonClick (function)
 				*/}
-				<Button onButtonClick={handleButtonClick}>Hello</Button>
+        <Button onButtonClick={handleButtonClick}>Hello</Button>
 
-
-				{/*
+        {/*
 					Component:
 						Text
 
@@ -29,10 +29,9 @@ class App extends Component {
 						heading (possible values: true / false - default)
 						size (possible values: small / medium - default / large)
 				*/}
+        <Text>Example text</Text>
 
-
-
-				{/*
+        {/*
 					Component:
 						Notification
 
@@ -40,9 +39,7 @@ class App extends Component {
 						type (possible values: success / danger / info - default)
 				*/}
 
-
-
-				{/*
+        {/*
 					Component:
 						Input
 
@@ -57,8 +54,7 @@ class App extends Component {
 						onInputChange (function)
 				*/}
 
-
-				{/*
+        {/*
 					Component:
 						LoginForm
 
@@ -70,20 +66,16 @@ class App extends Component {
 						Login and password should be printed in the console on submit button click
 				*/}
 
-
-
-				{/*
+        {/*
 					Component:
 						Form
 
 					Props:
 						config (array of objects) - required
 				*/}
-
-
-			</div>
-		);
-	}
+      </div>
+    );
+  }
 }
 
 export default App;
