@@ -1,0 +1,22 @@
+.notify {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 80px;
+}
+
+.notify.notify-success {
+  background-color: green;
+  color: white;
+}
+
+.notify.notify-danger {
+  background-color: red;
+  color: white;
+}
+
+.notify.notify-info {
+  background-color: yellow;
+  color: black;
+}
