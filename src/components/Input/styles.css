@@ -1,0 +1,19 @@
+input {
+  width: 160px;
+}
+
+.input-small {
+  height: 16px;
+}
+
+.input-medium {
+  height: 20px;
+}
+
+.input-large {
+  height: 24px;
+}
+
+.error {
+  color: red;
+}

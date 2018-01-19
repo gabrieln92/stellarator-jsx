@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import Button from './components/Button';
 import Text from './components/Text';
 import Notification from './components/Notification';
+import Input from './components/Input';
 
 function handleButtonClick() {
   alert('button clicked');
+}
+
+function handleInputChange() {
+  alert('input changed');
 }
 
 class App extends Component {
@@ -56,7 +61,13 @@ class App extends Component {
 						error (string)
 						onInputChange (function)
 				*/}
-
+        <Input
+          type="text"
+          name="1234"
+          placeholder="place"
+          size="large"
+          onInputChange={handleInputChange}
+        />
         {/*
 					Component:
 						LoginForm
