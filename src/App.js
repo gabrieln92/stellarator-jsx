@@ -4,6 +4,7 @@ import Text from './components/Text';
 import Notification from './components/Notification';
 import Input from './components/Input';
 import LoginForm from './components/LoginForm';
+import Form from './components/Form';
 
 function handleButtonClick() {
   alert('button clicked');
@@ -12,6 +13,27 @@ function handleButtonClick() {
 function handleInputChange() {
   alert('input changed');
 }
+
+const formConfig = [
+  {
+    type: 'email',
+    name: 'email',
+    value: 'example@email.pl'
+  },
+  {
+    type: 'password',
+    name: 'password',
+    placeholder: 'Enter password',
+    size: 'large'
+  },
+  {
+    type: 'text',
+    name: 'text',
+    placeholder: 'Enter text message',
+    size: 'small',
+    error: 'Error occured'
+  }
+];
 
 class App extends Component {
   render() {
@@ -91,6 +113,10 @@ class App extends Component {
 					Props:
 						config (array of objects) - required
 				*/}
+
+        <br />
+
+        <Form config={formConfig} />
       </div>
     );
   }
